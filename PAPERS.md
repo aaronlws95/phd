@@ -104,3 +104,4 @@ In this paper, the authors present a unified framework for joint estimation of 3
 In this method, the RGB image is passed through a convolutional network to produce a 3D grid where each cell contains a prediction of the hand pose, object pose, corresponding confidence levels, object class probabilities and action class probabilities. The predictions from the cell with the highest confidence for hand and object poses are chosen for each frame and then propagated in the temporal domain using LSTMs to account for long-term dependencies for action recognition. The dependencies between hand and object poses are modelled by a multilayer perceptron before being passed as input to the LSTM.
 </p>
 </details> 
+
