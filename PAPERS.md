@@ -3,8 +3,11 @@
 ## Notes
 
 **Top-down**: Incorporate person detector followed by pose estimation.
+
 **Bottom-up**: Detect all parts in the image followed by part association.
+
 **Discriminative**: Directly predict hand pose from image features.
+
 **Generative**: Minimize discrepancy between hand model and hand pose.
 
 
@@ -105,3 +108,32 @@ In this method, the RGB image is passed through a convolutional network to produ
 </p>
 </details> 
 
+<details>
+<summary>
+Self-supervised 3D hand pose estimation through training by fitting
+</summary>
+<p>
+<a href="http://www.vision.ee.ethz.ch/~wanc/papers/cvpr2019.pdf">paper</a>
+
+In this paper, the authors present a self-supervised method for 3D hand pose estimation from depth maps. The network is first initialized by training on a synthesized dataset. After which, the self-supervision is applied by model fitting. The model is an approximation of the 3D hand surface using spheres. Given a depth map, the sphere center coordinates are estimated and an estimate model is rendered and evaluated against the ground truth model. This method differs from conventional model-based tracking as it optimizes over neural network parameters rather than pose parameters. 
+
+The training loss is divided into two main segments: data and prior. The data terms includes a model to data term which aligns the spheres as close as possible to the surface points in the depth map. This is calculated as the L1 loss between input and rendered depth map. There is also a data to model term which is a registration loss between the estimated model and input depth map calculated by minimizing the distance between every point from the depth map and its projection on to the estimated hand model. Finally, there is a multi-view consistency term which provides supervision from multiple viewpoints. 
+
+For the prior terms, there is a vae term which maximizes the likelihood lower bound of the hand pose configuration. For this, a VAE is trained over the estimated sphere centers to learn the latent space in advance and its weights are frozen during training. Additionally, there is a bone length term to ensure that distances between two bone end points remain unchanged and also a collision term to penalize self collision. 
+</p>
+</details> 
+
+<details>
+<summary>
+Learning joint reconstruction of hands and manipulated objects
+</summary>
+<p>
+<a href="https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/499/obman.pdf">paper</a>
+
+In this paper, the authors present a self-supervised method for 3D hand pose estimation from depth maps. The network is first initialized by training on a synthesized dataset. After which, the self-supervision is applied by model fitting. The model is an approximation of the 3D hand surface using spheres. Given a depth map, the sphere center coordinates are estimated and an estimate model is rendered and evaluated against the ground truth model. This method differs from conventional model-based tracking as it optimizes over neural network parameters rather than pose parameters. 
+
+The training loss is divided into two main segments: data and prior. The data terms includes a model to data term which aligns the spheres as close as possible to the surface points in the depth map. This is calculated as the L1 loss between input and rendered depth map. There is also a data to model term which is a registration loss between the estimated model and input depth map calculated by minimizing the distance between every point from the depth map and its projection on to the estimated hand model. Finally, there is a multi-view consistency term which provides supervision from multiple viewpoints. 
+
+For the prior terms, there is a vae term which maximizes the likelihood lower bound of the hand pose configuration. For this, a VAE is trained over the estimated sphere centers to learn the latent space in advance and its weights are frozen during training. Additionally, there is a bone length term to ensure that distances between two bone end points remain unchanged and also a collision term to penalize self collision. 
+</p>
+</details> 
