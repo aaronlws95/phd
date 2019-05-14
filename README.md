@@ -1,2 +1,2 @@
 # phd
-Compilation of miscellaneous PhD related files
+Compilation of PhD resources
