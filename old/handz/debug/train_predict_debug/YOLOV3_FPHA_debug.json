@@ -1,0 +1,95 @@
+{
+    "name": "YOLOV3_FPHA"
+    , "device": 1
+    , "exp_dir": "/4TB/aaron/data_yolo_fpha/debug"
+    , "load_epoch": 0
+    , "max_epochs": 5
+    , "val_freq": 1
+    , "deterministic": false
+
+    , "dataset": {
+        "train": {
+          "name": "YOLOV3_FPHA"
+        , "split": "train"
+        , "img_dir": "/4TB/aaron/First_Person_Action_Benchmark/Video_files"
+        , "save_prefix": "/4TB/aaron/data_yolo_fpha/train_fpha_root"
+        , "img_size": 416 
+        , "shuffle": true
+        , "num_workers": 10
+        , "batch_size": 16
+        , "len": 2
+        , "aug": {
+            "do_aug": true   
+          , "jitter": 0.2
+          , "hue": 0.1
+          , "sat": 1.5 
+          , "exp": 1.5  
+          , "flip": true
+          , "rot_deg": 0
+          , "scale_jitter": 0
+          , "shear": 0
+        }
+      }
+  
+      , "val": {
+          "name": "YOLOV3_FPHA"
+        , "split": "val"
+        , "img_dir": "/4TB/aaron/First_Person_Action_Benchmark/Video_files"
+        , "save_prefix": "/4TB/aaron/data_yolo_fpha/test_fpha_root"
+        , "img_size": 416    
+        , "shuffle": true
+        , "num_workers": 10
+        , "batch_size": 16
+        , "len": 2      
+      }
+  
+      , "test": {
+          "name": "YOLOV3_FPHA"
+        , "split": "test"
+        , "img_dir": "/4TB/aaron/First_Person_Action_Benchmark/Video_files"
+        , "save_prefix": "/4TB/aaron/data_yolo_fpha/test_fpha_root"
+        , "img_size": 416
+        , "batch_size": 1 
+        , "len": 2     
+      }      
+    }
+    , "model": {
+        "name": "YOLOV3net_1Class"
+      , "pretrain": "/4TB/aaron/data_yolo/darknet53.conv.74"
+      , "cfg_file": "/4TB/aaron/handz/models/networks/cfg/yolov3-1class.cfg"
+      , "save_freq": 1
+      , "time": false
+      , "val_conf_thresh": 0.1
+      , "val_nms_thresh": 0.5 
+      , "val_iou_thresh": 0.5 
+      , "pred_conf_thresh": 0.001
+      , "pred_nms_thresh": 0.5
+      , "pred_iou_thresh": 0.5
+      , "img_size": 416
+      , "loss_iou_thresh": 0.1
+      , "loss_mult": 1
+      , "xy_loss_frac": 8
+      , "wh_loss_frac": 1
+      , "cls_loss_frac": 1
+      , "conf_loss_frac": 64      
+      , "burnin": false
+      , "batches_per_epoch": 7329
+      , "optimizer": {
+          "name": "SGD_yolo"
+        , "momentum": 0.9
+        , "decay": 0.0005
+        , "batch_size": 16
+        , "learning_rate": 0.001
+      }
+      , "scheduler": {
+          "is_schedule": true
+        , "name": "multistep"
+        , "milestones": [150, 175]
+        , "gamma": 0.1
+      }
+    }
+    , "logger": {
+        "print_freq": 1
+    }
+  }
+  

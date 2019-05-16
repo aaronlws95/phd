@@ -1,0 +1,90 @@
+{
+    "name": "YOLOV3"
+    , "device": "distributed"
+    , "exp_dir": "/mnt/lustre/awslow/data_yolov3/base"
+    , "load_epoch": 0
+    , "max_epochs": 273
+    , "val_freq": 10
+    , "deterministic": false
+
+    , "dataset": {
+        "train": {
+          "name": "YOLOV3_COCO"
+        , "split": "train"
+        , "root": "/mnt/lustre/awslow/coco/trainvalno5k.txt"
+        , "img_size": 416 
+        , "shuffle": true
+        , "num_workers": 10
+        , "batch_size": 64
+        , "len": "max"
+        , "aug": {
+            "do_aug": true   
+          , "jitter": 0.1
+          , "sat": 0.5 
+          , "exp": 0.5  
+          , "flip": true
+          , "rot_deg": 5
+          , "scale_jitter": 0.1
+          , "shear": 2
+        }
+      }
+  
+      , "val": {
+          "name": "YOLOV3_COCO"
+        , "split": "val"
+        , "root": "/mnt/lustre/awslow/coco/5k.txt"
+        , "img_size": 416    
+        , "shuffle": true
+        , "num_workers": 10
+        , "batch_size": 64
+        , "len": "max"      
+      }
+  
+      , "test": {
+          "name": "YOLOV3_COCO"
+        , "split": "test"
+        , "root": "/mnt/lustre/awslow/coco/5k.txt"
+        , "img_size": 416
+        , "len": "max"     
+      }      
+    }
+    , "model": {
+        "name": "YOLOV3net_COCO"
+      , "pretrain": "/mnt/lustre/awslow/data_yolov3/darknet53.conv.74"
+      , "cfg_file": "/mnt/lustre/awslow/handz/models/networks/cfg/yolov3.cfg"
+      , "save_freq": 10
+      , "time": false
+      , "val_conf_thresh": 0.1
+      , "val_nms_thresh": 0.5 
+      , "val_iou_thresh": 0.5 
+      , "pred_conf_thresh": 0.001
+      , "pred_nms_thresh": 0.5
+      , "pred_iou_thresh": 0.5
+      , "img_size": 416
+      , "loss_iou_thresh": 0.1
+      , "loss_mult": 1
+      , "xy_loss_frac": 8
+      , "wh_loss_frac": 1
+      , "cls_loss_frac": 1
+      , "conf_loss_frac": 64      
+      , "burnin": true
+      , "optimizer": {
+          "name": "SGD"
+        , "momentum": 0.9
+        , "decay": 0.0005
+        , "learning_rate": 0.0001
+      }
+      , "scheduler": {
+          "is_schedule": true
+        , "name": "multistep"
+        , "milestones": [218, 245]
+        , "gamma": 0.1
+      }
+      , "anchors": [10,13,  16,30,  33,23,  30,61,  62,45,  59,119,  116,90,  156,198,  373,326]
+      , "classes": 80
+    }
+    , "logger": {
+        "print_freq": 5
+    }
+  }
+  

@@ -10,7 +10,6 @@
 
 **Generative**: Minimize discrepancy between hand model and hand pose.
 
-
 ## Papers
 
 <!-- Template -->
@@ -137,5 +136,17 @@ For hand mesh estimation, they integrate the MANO hand model as a differentiable
 For object mesh estimation, they use AtlasNet for object prediction. AtlasNet takes as input the concatenation of point coordinates sampled either on a set of square patches or on a sphere and image features from the object encoder. To deal with the large variety of objects, they penalize edges with lengths different from the average edge length and also encourage the curvature of the predicted mesh to be similar to the curvature of a sphere. The object position and scale relative to the hand is then predicted to transform the AltasNet decoded vertices to the final object reconstruction.
 
 Furthermore, a contact loss is introduced to account for physically inplausible hand-object configurations. They define two losses: repulsion, which penalizes hand and object interpenetration and attraction with penalizes hand vertices in the vicinity of the object but not in contact.
+</p>
+</details> 
+
+<details>
+<summary>
+Temporal Segment Networks for Action
+Recognition in Videos
+</summary>
+<p>
+<a href="https://arxiv.org/pdf/1705.02953.pdf">paper</a>
+
+In this paper, the authors present a general and flexible video-level framework for learning action models in videos. 
 </p>
 </details> 

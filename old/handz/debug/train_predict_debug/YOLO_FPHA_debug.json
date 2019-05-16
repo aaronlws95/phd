@@ -1,0 +1,88 @@
+{
+  "name": "YOLO_FPHA"
+  , "__comment": "check to see if training and predicting doesn't error"
+  , "device": 0
+  , "exp_dir": "/4TB/aaron/data_yolo_fpha/debug"
+  , "load_epoch": 0
+  , "max_epochs": 5
+  , "val_freq": 1  
+  , "deterministic": false
+  , "dataset": {
+      "train": {
+        "name": "YOLO_FPHA"
+      , "split": "train"
+      , "img_dir": "/4TB/aaron/First_Person_Action_Benchmark/Video_files"
+      , "save_prefix": "/4TB/aaron/data_yolo_fpha/train_fpha_root"
+      , "img_width": 416
+      , "img_height": 416  
+      , "shuffle": true
+      , "num_workers": 10
+      , "batch_size": 32
+      , "len": 2       
+      , "aug": true   
+      , "jitter": 0.2
+      , "hue": 0.1
+      , "sat": 1.5 
+      , "exp": 1.5  
+      , "scale_jitter": 0.1
+      , "rot_deg": 5
+      , "flip": true
+    }
+
+    , "val": {
+        "name": "YOLO_FPHA"
+      , "split": "val"
+      , "img_dir": "/4TB/aaron/First_Person_Action_Benchmark/Video_files"
+      , "save_prefix": "/4TB/aaron/data_yolo_fpha/test_fpha_root"
+      , "img_width": 416
+      , "img_height": 416       
+      , "shuffle": true
+      , "num_workers": 16
+      , "batch_size": 2
+      , "len": 2      
+    }
+
+    , "test": {
+        "name": "YOLO_FPHA"
+      , "split": "test"
+      , "img_dir": "/4TB/aaron/First_Person_Action_Benchmark/Video_files"
+      , "save_prefix": "/4TB/aaron/data_yolo_fpha/test_fpha_root"
+      , "img_width": 416
+      , "img_height": 416     
+      , "batch_size": 2
+      , "len": 2     
+    }      
+  }
+  , "model": {
+      "name": "YOLOV2net_1Class"
+    , "pretrain": "/4TB/aaron/data_yolo/darknet19_448.conv.23"
+    , "cfg_file": "/4TB/aaron/handz/models/networks/cfg/yolov2-voc-1class.cfg"
+    , "save_freq": 1
+    , "time": false
+    , "val_conf_thresh": 0.9
+    , "val_nms_thresh": 0.40
+    , "val_iou_thresh": 0.5      
+    , "pred_conf_thresh": 0.5
+    , "pred_nms_thresh": 0.45
+    , "steps": [-1, 30, 40000, 60000]
+    , "scales": [0.1, 10, 0.1, 0.1]
+    , "optimizer": {
+        "name": "SGD_yolo"
+      , "momentum": 0.9
+      , "decay": 0.0005
+      , "batch_size": 32
+      , "learning_rate": 0.001
+    }
+    , "scheduler": {
+        "is_schedule": false
+    }
+    , "no_object_scale": 1
+    , "object_scale": 5
+    , "coord_scale": 1
+    , "sil_thresh": 0.6    
+    , "anchors": [ 2.33,5.74, 2.42,3.76, 3.02,5.38, 3.70,7.73, 3.97,4.75 ]
+  }
+  , "logger": {
+      "print_freq": 1
+  }
+}

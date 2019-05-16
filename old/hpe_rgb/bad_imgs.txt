@@ -1,0 +1,89 @@
+Training
+8364 Subject_1/handshake/4/color/color_0000.jpeg
+8381 Subject_1/handshake/4/color/color_0017.jpeg
+8382 Subject_1/handshake/4/color/color_0018.jpeg
+8383 Subject_1/handshake/4/color/color_0019.jpeg
+8384 Subject_1/handshake/4/color/color_0020.jpeg
+27188 Subject_6/open_juice_bottle/5/color/color_0061.jpeg
+27189 Subject_6/open_juice_bottle/5/color/color_0062.jpeg
+27190 Subject_6/open_juice_bottle/5/color/color_0063.jpeg
+27191 Subject_6/open_juice_bottle/5/color/color_0064.jpeg
+27192 Subject_6/open_juice_bottle/5/color/color_0065.jpeg
+34110 Subject_6/handshake/6/color/color_0000.jpeg
+42968 Subject_4/toast_wine/2/color/color_0068.jpeg
+42969 Subject_4/toast_wine/2/color/color_0069.jpeg
+42970 Subject_4/toast_wine/2/color/color_0070.jpeg
+42971 Subject_4/toast_wine/2/color/color_0071.jpeg
+42972 Subject_4/toast_wine/2/color/color_0072.jpeg
+42973 Subject_4/toast_wine/2/color/color_0073.jpeg
+42974 Subject_4/toast_wine/2/color/color_0074.jpeg
+42975 Subject_4/toast_wine/2/color/color_0075.jpeg
+42976 Subject_4/toast_wine/2/color/color_0076.jpeg
+42977 Subject_4/toast_wine/2/color/color_0077.jpeg
+42978 Subject_4/toast_wine/2/color/color_0078.jpeg
+42979 Subject_4/toast_wine/2/color/color_0079.jpeg
+42980 Subject_4/toast_wine/2/color/color_0080.jpeg
+42981 Subject_4/toast_wine/2/color/color_0081.jpeg
+48599 Subject_5/tear_paper/2/color/color_0168.jpeg
+52137 Subject_5/handshake/2/color/color_0022.jpeg
+52138 Subject_5/handshake/2/color/color_0023.jpeg
+52139 Subject_5/handshake/2/color/color_0024.jpeg
+52152 Subject_5/handshake/2/color/color_0037.jpeg
+52165 Subject_5/handshake/2/color/color_0050.jpeg
+52183 Subject_5/handshake/2/color/color_0068.jpeg
+52184 Subject_5/handshake/4/color/color_0000.jpeg
+52185 Subject_5/handshake/4/color/color_0001.jpeg
+52323 Subject_5/high_five/4/color/color_0032.jpeg
+15904
+43807
+43808   
+48601
+48600
+30159
+27756
+Testing
+8364 Subject_1/handshake/1/color/color_0178.jpeg
+8381 Subject_1/handshake/1/color/color_0195.jpeg
+8382 Subject_1/handshake/1/color/color_0196.jpeg
+8383 Subject_1/handshake/1/color/color_0197.jpeg
+8384 Subject_1/handshake/1/color/color_0198.jpeg
+27188 Subject_3/give_coin/3/color/color_0013.jpeg
+27189 Subject_3/give_coin/3/color/color_0014.jpeg
+27190 Subject_3/give_coin/3/color/color_0015.jpeg
+27191 Subject_3/give_coin/3/color/color_0016.jpeg
+27192 Subject_3/give_coin/3/color/color_0017.jpeg
+34110 Subject_6/light_candle/3/color/color_0026.jpeg
+42968 Subject_4/give_card/1/color/color_0028.jpeg
+42969 Subject_4/give_card/1/color/color_0029.jpeg
+42970 Subject_4/give_card/1/color/color_0030.jpeg
+42971 Subject_4/give_card/1/color/color_0031.jpeg
+42972 Subject_4/give_card/1/color/color_0032.jpeg
+42973 Subject_4/give_card/1/color/color_0033.jpeg
+42974 Subject_4/give_card/1/color/color_0034.jpeg
+42975 Subject_4/give_card/1/color/color_0035.jpeg
+42976 Subject_4/give_card/1/color/color_0036.jpeg
+42977 Subject_4/give_card/1/color/color_0037.jpeg
+42978 Subject_4/give_card/1/color/color_0038.jpeg
+42979 Subject_4/give_card/1/color/color_0039.jpeg
+42980 Subject_4/give_card/1/color/color_0040.jpeg
+42981 Subject_4/give_card/1/color/color_0041.jpeg
+48599 Subject_5/write/1/color/color_0074.jpeg
+52137 Subject_5/receive_coin/1/color/color_0019.jpeg
+52138 Subject_5/receive_coin/1/color/color_0020.jpeg
+52139 Subject_5/receive_coin/1/color/color_0021.jpeg
+52152 Subject_5/receive_coin/1/color/color_0034.jpeg
+52165 Subject_5/receive_coin/1/color/color_0047.jpeg
+52183 Subject_5/receive_coin/3/color/color_0000.jpeg
+52184 Subject_5/receive_coin/3/color/color_0001.jpeg
+52185 Subject_5/receive_coin/3/color/color_0002.jpeg
+52323 Subject_5/give_card/3/color/color_0014.jpeg
+31611
+19243
+32301
+49196
+9684
+9685
+46985
+45986
+49196
+49363

@@ -1,0 +1,90 @@
+{
+  "name": "YOLOV3_COCO"
+  , "__comment": "check to see if training and predicting doesn't error"
+  , "device": 0
+  , "exp_dir": "/4TB/aaron/data_yolo/debug"
+  , "load_epoch": 0
+  , "max_epochs": 5
+  , "val_freq": 1  
+  , "deterministic": false
+  , "dataset": {
+      "train": {
+        "name": "YOLOV3_COCO"
+      , "split": "train"
+      , "root": "/4TB/aaron/coco/trainvalno5k.txt"
+      , "img_size": 416 
+      , "shuffle": true
+      , "num_workers": 10
+      , "batch_size": 16
+      , "len": 2
+      , "aug": {
+          "do_aug": true   
+        , "jitter": 0.1
+        , "sat": 0.5 
+        , "exp": 0.5  
+        , "flip": true
+        , "rot_deg": 5
+        , "scale_jitter": 0.1
+        , "shear": 2
+      }
+    }
+
+    , "val": {
+        "name": "YOLOV3_COCO"
+      , "split": "val"
+      , "root": "/4TB/aaron/coco/5k.txt"
+      , "img_size": 416    
+      , "shuffle": true
+      , "num_workers": 16
+      , "batch_size": 16
+      , "len": 2
+    }
+
+    , "test": {
+        "name": "YOLOV3_COCO"
+      , "split": "test"
+      , "root": "/4TB/aaron/coco/5k.txt"
+      , "img_size": 416
+      , "batch_size": 1 
+      , "len": 2
+    }      
+  }
+  , "model": {
+      "name": "YOLOV3net_COCO"
+    , "pretrain": "/4TB/aaron/data_yolo/darknet53.conv.74"
+    , "cfg_file": "/4TB/aaron/handz/models/networks/cfg/yolov3.cfg"
+    , "save_freq": 1
+    , "time": false
+    , "val_conf_thresh": 0.1
+    , "val_nms_thresh": 0.5 
+    , "val_iou_thresh": 0.5 
+    , "pred_conf_thresh": 0.001
+    , "pred_nms_thresh": 0.5
+    , "pred_iou_thresh": 0.5
+    , "img_size": 416
+    , "loss_iou_thresh": 0.1
+    , "loss_mult": 1
+    , "xy_loss_frac": 8
+    , "wh_loss_frac": 1
+    , "cls_loss_frac": 1
+    , "conf_loss_frac": 64
+    , "burnin": true
+    , "batches_per_epoch": 7329
+    , "optimizer": {
+        "name": "SGD"
+      , "momentum": 0.9
+      , "decay": 0.0005
+      , "learning_rate": 0.0001
+    }
+    , "scheduler": {
+        "is_schedule": true
+      , "name": "multistep"
+      , "milestones": [218, 245]
+      , "gamma": 0.1
+    }
+    , "classes": 80
+  }
+  , "logger": {
+      "print_freq": 1
+  }
+}

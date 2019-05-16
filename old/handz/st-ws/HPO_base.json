@@ -1,0 +1,90 @@
+{
+    "name": "HPO"
+    , "device": 0
+    , "exp_dir": "/mnt/lustre/awslow/data_hpo/base"
+    , "load_epoch": 0
+    , "max_epochs": 200
+    , "val_freq": 10  
+    , "deterministic": false
+    , "dataset": {
+        "train": {
+          "name": "HPO_FPHA"
+        , "split": "train"
+        , "img_dir": "/mnt/lustre/awslow/First_Person_Action_Benchmark/Video_files"
+        , "save_prefix": "/mnt/lustre/awslow/data_hpo/train_fpha_root"
+        , "img_width": 416
+        , "img_height": 416
+        , "actual_shuffle": true         
+        , "shuffle": false
+        , "num_workers": 16
+        , "batch_size": 16
+        , "aug": true
+        , "change_res": false
+        , "change_res_freq": 50     
+        , "jitter": 0.1
+        , "hue": 0.1
+        , "sat": 0.5 
+        , "exp": 0.5  
+        , "rot_deg": 0
+        , "scale_jitter": 0
+	      , "shear": 0
+        , "flip": false
+        , "len": "max"
+      }
+  
+      , "val": {
+          "name": "HPO_FPHA"
+        , "split": "val"
+        , "img_dir": "/mnt/lustre/awslow/First_Person_Action_Benchmark/Video_files"
+        , "save_prefix": "/mnt/lustre/awslow/data_hpo/test_fpha_root"  
+        , "img_width": 416
+        , "img_height": 416         
+        , "shuffle": true
+        , "num_workers": 2
+        , "batch_size": 1         
+        , "len": "max"
+      }
+  
+      , "test": {
+          "name": "HPO_FPHA"
+        , "split": "test"
+        , "img_dir": "/mnt/lustre/awslow/First_Person_Action_Benchmark/Video_files"
+        , "save_prefix": "/mnt/lustre/awslow/data_hpo/test_fpha_root"       
+        , "img_width": 416
+        , "img_height": 416         
+        , "shuffle": false
+        , "num_workers": 2
+        , "batch_size": 1     
+        , "len": "max"
+      }      
+    }
+    , "model": {
+        "name": "HPOnet"
+      , "pretrain": "/mnt/lustre/awslow/data_yolo/darknet19_448.conv.23"
+      , "cfg_file": "/mnt/lustre/awslow/handz/models/networks/cfg/yolov2_hpo.cfg"
+      , "save_freq": 10
+  
+      , "optimizer": {
+          "name": "SGD_yolo"
+        , "momentum": 0.9
+        , "decay": 0.0005
+        , "batch_size": 16
+        , "learning_rate": 0.0001
+      }
+      , "scheduler": {
+          "is_schedule": true
+        , "milestones": [80, 160]
+        , "gamma": 0.1
+      }
+      , "no_hand_scale": 0.1
+      , "hand_scale": 5
+      , "sharpness": 2
+      , "d_th": 75
+      , "sil_thresh": 0.6
+      , "hand_root": 3
+    }
+    , "logger": {
+        "print_freq": 5
+    }
+  }
+  

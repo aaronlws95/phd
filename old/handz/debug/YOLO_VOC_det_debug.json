@@ -1,0 +1,89 @@
+{
+    "name": "YOLO_VOC"
+    , "__coment": "for deterministic comparison with pytorch-yolo2 marvis"
+    , "device": 0
+    , "exp_dir": "/4TB/aaron/data_yolo/base_debug"
+    , "load_epoch": 0
+    , "max_epochs": 150
+    , "val_freq": 10
+    , "deterministic": true  
+    , "dataset": {
+        "train": {
+          "name": "YOLO_VOC"
+        , "split": "train"
+        , "root": "/4TB/aaron/data_yolo/voc_train.txt"
+        , "img_width": 416
+        , "img_height": 416
+        , "actual_shuffle": true      
+        , "shuffle": false
+        , "num_workers": 10
+        , "batch_size": 32
+        , "len": "max"        
+        , "aug": true
+        , "change_res": false
+        , "change_res_freq": 50     
+        , "jitter": 0.2
+        , "hue": 0.1
+        , "sat": 1.5 
+        , "exp": 1.5 
+        , "flip": true 
+      }
+  
+      , "val": {
+          "name": "YOLO_VOC"
+        , "split": "val"
+        , "root": "/4TB/aaron/data_yolo/2007_test.txt"
+        , "img_width": 416
+        , "img_height": 416       
+        , "shuffle": true
+        , "num_workers": 16
+        , "batch_size": 32
+        , "len": "max"      
+      }
+  
+      , "test": {
+          "name": "YOLO_VOC"
+        , "split": "test"
+        , "root": "/4TB/aaron/data_yolo/2007_test.txt"
+        , "img_width": 416
+        , "img_height": 416     
+        , "shuffle": false
+        , "len": "max"      
+      }      
+    }
+    , "model": {
+        "name": "YOLOV2net_VOC"
+      , "pretrain": "/4TB/aaron/data_yolo/darknet19_448.conv.23"
+      , "cfg_file": "/4TB/aaron/handz/models/networks/yolov2-voc.cfg"
+      , "save_freq": 10
+      , "time": false
+      , "val_conf_thresh": 0.25
+      , "val_nms_thresh": 0.40      
+      , "val_iou_thresh": 0.5   
+      , "pred_conf_thresh": 0.005
+      , "pred_nms_thresh": 0.45
+      , "steps": [-1, 500, 40000, 60000]
+      , "scales": [0.1, 10, 0.1, 0.1]      
+      , "optimizer": {
+          "name": "SGD_yolo"
+        , "momentum": 0.9
+        , "decay": 0.0005
+        , "batch_size": 32
+        , "learning_rate": 0.001
+      }
+      , "scheduler": {
+          "is_schedule": false
+      }
+      , "no_object_scale": 1
+      , "object_scale": 5
+      , "class_scale": 1
+      , "coord_scale": 1
+      , "sil_thresh": 0.6    
+      , "anchors": [1.3221, 1.73145, 3.19275, 4.00944, 5.05587, 8.09892, 9.47112, 4.84053, 11.2364, 10.0071]
+      , "classes": 20
+    }
+    , "logger": {
+        "print_freq": 1
+    }
+  }
+  

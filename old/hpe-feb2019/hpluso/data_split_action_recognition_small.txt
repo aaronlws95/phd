@@ -1,0 +1,6 @@
+Training 600
+Subject_1/open_juice_bottle/2 0
+
+Test 575
+Subject_1/open_juice_bottle/1 0
+
