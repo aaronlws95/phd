@@ -2,7 +2,7 @@
 
 ## [LeCun 1998](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf)
 
-*CNN original paper*.
+**CNN original paper**.
 
 ```
 @article{lecun1998gradient,
