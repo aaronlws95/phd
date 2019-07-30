@@ -5,7 +5,7 @@
 * **NTU workstation**: `ssh aaron@172.21.146.106`
 * **NTU micl-loyccws1**: `ssh aaron@172.21.148.106`
     * password: micl-loyccws
-* **NTU micl-loyccws2**: `ssh aaron@172.21.145.2`
+* **NTU micl-loyccws2**: `ssh aaron@172.21.145.43`
 * **SenseTime workstation**: `ssh -p 10087 awslow@203.126.234.118`
     * password: UW@TY9FTD!UIF9$leizLuQ
 
