@@ -7,7 +7,7 @@ Papers
 
 * [General](lit/GENERAL.md)
 * [Audio Animation](lit/AUDIO_ANIMATION.md)
-* [Datasets] (lit/DATASETS.md)
+* [Datasets](lit/DATASETS.md)
 * [Hand Pose Estimation](lit/HAND_POSE_ESTIMATION.md)
 * [Human Pose Estimation](lit/HUMAN_POSE_ESTIMATION.md)
 

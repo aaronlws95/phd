@@ -125,3 +125,12 @@ Learn visual correspondence from video in a self-supervised manner using cycle c
   year={2019}
 }
 ```
+
+## [???]()
+
+Recurrent Pose Estimation Under Heavy Occlusion
+
+**Detect multiple human pose instances from one bounding box**. Extracts image and hidden features which are passed to a classifier to determine if there an instance in the image. If present, the features are used to estimate heatmaps. Hidden features are updated with the estimated heatmap and current hidden feature. This is to remove instance information if an instance is present. The entire process repeats until the classifier cannot detect anymore instances. A new dataset containing a wide variation of occlusion is synthesized by sampling images from the COCO keypoint dataset.
+
+```
+```
