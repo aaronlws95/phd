@@ -43,3 +43,4 @@ https://facundoq.github.io/unlp/sign_language_datasets/index.html
 | [SynthHands](http://handtracker.mpi-inf.mpg.de/projects/OccludedHands/SynthHands.htm) | 63540 | 3D | RGB+D | Synthetic | Single | Egocentric | Unity + LeapMotion |
 | [EgoDexter](http://handtracker.mpi-inf.mpg.de/projects/OccludedHands/EgoDexter.htm) | 1485 | 3D | RGB+D | Lab with objects | Single | Egocentric | Manual (fingertips) |
 | [GANerated](https://handtracker.mpi-inf.mpg.de/projects/GANeratedHands/GANeratedDataset.htm) | 330K | 3D | RGB | Synthetic | Single | Egocentric | [paper](https://handtracker.mpi-inf.mpg.de/projects/GANeratedHands/index.htm) |
+| [HO-3D](https://arxiv.org/pdf/1907.01481.pdf) | 
