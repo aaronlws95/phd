@@ -64,7 +64,7 @@ if model_type == 'dcgan':
 optimizer = torch.optim.SGD(model.parameters(), lr = 0.01)
 bceloss = torch.nn.BCELoss()
 
-max_epoch = 50
+max_epoch = 500
 model = model.train()
 for epoch in range(max_epoch):
     for step, (img_crop, is_hand) in enumerate(train_dataloader):

@@ -14,13 +14,8 @@ from tensorboardX import SummaryWriter
 from dataset import *
 from discriminator import *
 
-exp = 'exp3'
-epoch = 49
-
-map_loc = 'cuda:0'
-load_dir = Path(ROOT)/'verify_hand_crop_disc'/'data'/'{}'.format(exp)/'model_verify_hand_disc_{}.state'.format(epoch)
-ckpt = torch.load(load_dir, map_location=map_loc)
-model.load_state_dict(ckpt['model_state_dict'])
+exp = 'exp4'
+epoch = 199
 
 cfg = parse('/mnt/4TB/aaron/verify_hand_crop_disc/config_{}.cfg'.format(exp))
 
@@ -28,6 +23,11 @@ model_type = cfg['model']
 
 if model_type == 'dcgan':
     model = DCGAN_Discriminator().cuda()
+
+map_loc = 'cuda:0'
+load_dir = Path(ROOT)/'verify_hand_crop_disc'/'data'/'{}'.format(exp)/'model_verify_hand_disc_{}.state'.format(epoch)
+ckpt = torch.load(load_dir, map_location=map_loc)
+model.load_state_dict(ckpt['model_state_dict'])
 
 cfg['aug'] = False
 
