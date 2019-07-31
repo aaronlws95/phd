@@ -85,3 +85,6 @@ With the whole network schema using the one in Inception-ResNet-v1, Stem using t
 
 ![Stacked Hourglass Network](../imgs/stackedhourglass.png)
 
+## [Multiresolution Network](http://yann.lecun.com/exdb/publis/pdf/tompson-siggraph-14.pdf)
+
+![Multiresolution](../imgs/multireso.png)
