@@ -62,8 +62,6 @@ Inception-ResNet-v1: Whole Network Schema (Leftmost), Stem (2nd Left), Inception
 
 ## [Inception ResNet v2](https://arxiv.org/pdf/1602.07261.pdf)
 
-![Inception ResNet v2](../imgs/inception-resnet-v2.png)
-
 
 ![Inception ResNet v2 Blocks](../imgs/inception-resnet-v2_blocks.png)
 
@@ -78,3 +76,12 @@ With the whole network schema using the one in Inception-ResNet-v1, Stem using t
 ## [U-Net](https://arxiv.org/pdf/1505.04597.pdf)
 
 ![U-Net](../imgs/unet.png)
+
+## [Convolutional Pose Machine](https://arxiv.org/pdf/1602.00134.pdf)
+
+![Convolutional Pose Machine](../imgs/cpm.png)
+
+## [Stacked Hourglass Network](https://arxiv.org/pdf/1603.06937.pdf)
+
+![Stacked Hourglass Network](../imgs/stackedhourglass.png)
+
