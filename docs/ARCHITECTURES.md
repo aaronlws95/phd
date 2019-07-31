@@ -31,3 +31,9 @@
 ## [Inception v3](https://arxiv.org/pdf/1512.00567v3.pdf)
 
 ![Inception v3](../imgs/inceptionv3.png)
+
+## [ResNeXt](https://arxiv.org/pdf/1611.05431.pdf)
+
+![ResNeXt](../imgs/resnext.png)
+
+![ResNext block](../imgs/resnext_block.png)
