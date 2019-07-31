@@ -44,10 +44,19 @@ also known as GoogLeNet
 
 ![Inception v4](../imgs/inceptionv4.png)
 
+Inception-v4: Whole Network Schema (Leftmost), Stem (2nd Left), Inception-A (Middle), Inception-B (2nd Right), Inception-C (Rightmost)
+
 ## [Inception ResNet v1](https://arxiv.org/pdf/1602.07261.pdf)
 
 ![Inception ResNet v1](../imgs/inception-resnet-v1.png)
 
+Inception-ResNet-v1: Whole Network Schema (Leftmost), Stem (2nd Left), Inception-A (Middle), Inception-B (2nd Right), Inception-C (Rightmost)
+
 ## [Inception ResNet v2](https://arxiv.org/pdf/1602.07261.pdf)
 
 ![Inception ResNet v2](../imgs/inception-resnet-v2.png)
+
+
+![Inception ResNet v2 Blocks](../imgs/inception-resnet-v2_blocks.png)
+
+Inception-ResNet-v2: Inception-A (Leftmost), Inception-B (Middle), Inception-C (Rightmost)
