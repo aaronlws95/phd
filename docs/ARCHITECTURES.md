@@ -60,3 +60,5 @@ Inception-ResNet-v1: Whole Network Schema (Leftmost), Stem (2nd Left), Inception
 ![Inception ResNet v2 Blocks](../imgs/inception-resnet-v2_blocks.png)
 
 Inception-ResNet-v2: Inception-A (Leftmost), Inception-B (Middle), Inception-C (Rightmost)
+
+With the whole network schema using the one in Inception-ResNet-v1, Stem using the one in Inception-v4, and the above versions of Inception-A, Inception-B and Inception-C, we can have Inception-ResNet-v2.
