@@ -74,3 +74,7 @@ With the whole network schema using the one in Inception-ResNet-v1, Stem using t
 ![Inception ResNet Reduction](../imgs/inception-resnet_reduction.jpeg)
 
 (From Left) Reduction Block A (35x35 to 17x17 size reduction) and Reduction Block B (17x17 to 8x8 size reduction).
+
+## [U-Net](https://arxiv.org/pdf/1505.04597.pdf)
+
+![U-Net](../imgs/unet.png)
