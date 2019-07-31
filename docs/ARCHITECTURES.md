@@ -46,11 +46,19 @@ also known as GoogLeNet
 
 Inception-v4: Whole Network Schema (Leftmost), Stem (2nd Left), Inception-A (Middle), Inception-B (2nd Right), Inception-C (Rightmost)
 
+![Inception Reduction](../imgs/inception_reduction.png)
+
+(From Left) Reduction Block A (35x35 to 17x17 size reduction) and Reduction Block B (17x17 to 8x8 size reduction).
+
 ## [Inception ResNet v1](https://arxiv.org/pdf/1602.07261.pdf)
 
 ![Inception ResNet v1](../imgs/inception-resnet-v1.png)
 
 Inception-ResNet-v1: Whole Network Schema (Leftmost), Stem (2nd Left), Inception-A (Middle), Inception-B (2nd Right), Inception-C (Rightmost)
+
+![Inception ResNet Reduction](../imgs/inception-resnet_reduction.png)
+
+(From Left) Reduction Block A (35x35 to 17x17 size reduction) and Reduction Block B (17x17 to 8x8 size reduction).
 
 ## [Inception ResNet v2](https://arxiv.org/pdf/1602.07261.pdf)
 
@@ -62,3 +70,7 @@ Inception-ResNet-v1: Whole Network Schema (Leftmost), Stem (2nd Left), Inception
 Inception-ResNet-v2: Inception-A (Leftmost), Inception-B (Middle), Inception-C (Rightmost)
 
 With the whole network schema using the one in Inception-ResNet-v1, Stem using the one in Inception-v4, and the above versions of Inception-A, Inception-B and Inception-C, we can have Inception-ResNet-v2.
+
+![Inception ResNet Reduction](../imgs/inception-resnet_reduction.png)
+
+(From Left) Reduction Block A (35x35 to 17x17 size reduction) and Reduction Block B (17x17 to 8x8 size reduction).
