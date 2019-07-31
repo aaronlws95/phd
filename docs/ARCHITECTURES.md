@@ -28,6 +28,8 @@
 
 ![Inception v1](../imgs/inceptionv1.png)
 
+also known as GoogLeNet
+
 ## [Inception v3](https://arxiv.org/pdf/1512.00567v3.pdf)
 
 ![Inception v3](../imgs/inceptionv3.png)
@@ -37,3 +39,15 @@
 ![ResNeXt](../imgs/resnext.png)
 
 ![ResNext block](../imgs/resnext_block.png)
+
+## [Inception v4](https://arxiv.org/pdf/1602.07261.pdf)
+
+![Inception v4](../imgs/inceptionv4.png)
+
+## [Inception ResNet v1](https://arxiv.org/pdf/1602.07261.pdf)
+
+![Inception ResNet v1](../imgs/inception-resnet-v1.png)
+
+## [Inception ResNet v2](https://arxiv.org/pdf/1602.07261.pdf)
+
+![Inception ResNet v2](../imgs/inception-resnet-v2.png)
