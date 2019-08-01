@@ -134,3 +134,13 @@ Recurrent Pose Estimation Under Heavy Occlusion
 
 ```
 ```
+
+## [???]()
+
+Optimizing Network Structure for 3D Human Pose Estimation
+
+**Reformulate Graph Convolutional Network (GCN) for 3D human pose estimation**. The reformulation includes discarding the weight sharing scheme for GCN and constructing a structure matrix that accounts for joint dependence of the human anatomy. The network (Locally Connected Network) takes a 2D pose input (estimated by a 2D pose estimator) and outputs the corresponding 3D pose.
+
+
+```
+```
