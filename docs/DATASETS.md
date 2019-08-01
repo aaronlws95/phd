@@ -44,4 +44,4 @@ https://facundoq.github.io/unlp/sign_language_datasets/index.html
 | [EgoDexter](http://handtracker.mpi-inf.mpg.de/projects/OccludedHands/EgoDexter.htm) | 1485 | 3D | RGB+D | Lab with objects | Single | Egocentric | Manual (fingertips) |
 | [GANerated](https://handtracker.mpi-inf.mpg.de/projects/GANeratedHands/GANeratedDataset.htm) | 330K | 3D | RGB | Synthetic | Single | Egocentric | [paper](https://handtracker.mpi-inf.mpg.de/projects/GANeratedHands/index.htm) |
 | [HO-3D](https://arxiv.org/pdf/1907.01481.pdf) | 15K | 3D | RGB | Real | Single | 3rd Person | [Global optimization with 3D models and RGB+D camera]((https://arxiv.org/pdf/1907.01481.pdf)) |
-| [Obman](https://www.di.ens.fr/willow/research/obman/data/) | 
+| [Obman](https://www.di.ens.fr/willow/research/obman/data/) | 150K | 3D | RGB | Synthetic | Single | 3rd Person | [MANO, ShapeNet, GraspIt, SMPL](https://arxiv.org/pdf/1904.05767.pdf) |
