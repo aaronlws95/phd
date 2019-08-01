@@ -18,8 +18,5 @@ Compilation of PhD resources
 ## Links
 
 * [NTU MMLab Wiki](https://github.com/ccloy/MMLab-NTU/wiki)
-
-## [Old Stuff](old)
-
-Deprecated work. Useful for reference.
-
+* [Old Stuff](old)
+* [Drive](https://drive.google.com/drive/u/1/folders/1nUnqKZrO3BinWi_72HoeIITm4GNTvKsW)
