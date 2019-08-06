@@ -12,7 +12,7 @@ Compilation of PhD resources
 ## Useful
 
 * [NTU](docs/NTU.md)
-* [SNIPPETS](docs/SNIPPETS.md)
+* [Snippets](docs/SNIPPETS.md)
 * [Architectures](docs/ARCHITECTURES.md)
 
 ## Links
