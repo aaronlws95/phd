@@ -205,20 +205,6 @@ month={April},}
 }
 ```
 
-## [Hasson 2019](https://arxiv.org/pdf/1904.05767.pdf)
-
-**Joint reconstruction of object and hand mesh from monocular RGB**. Method employs two main branches, one for hand and one for object. For the hand branch, the MANO model (PCA) which maps a pose and shape parameter to a mesh is integrated as a differentiable layer. For the object branch, Atlasnet is employed for object prediction. Scale and translation is also predicted to keep object position and scale relative to the hand. Repulsion loss is introduced  to penalize interpentration and an attraction loss is introduced to penalize cases where the surfaces are not in contact. Creates own synthetic dataset for training and evaluation.
-
-```
-@inproceedings{hasson2019learning,
-  title={Learning joint reconstruction of hands and manipulated objects},
-  author={Hasson, Yana and Varol, Gul and Tzionas, Dimitrios and Kalevatykh, Igor and Black, Michael J and Laptev, Ivan and Schmid, Cordelia},
-  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-  pages={11807--11816},
-  year={2019}
-}
-```
-
 ## [Camgoz 2018](https://www-i6.informatik.rwth-aachen.de/publications/download/1064/CamgozCihanHadfieldSimonKollerOscarNeyHermannBowdenRichard--NeuralSignLanguageTranslation--2018.pdf)
 
 **Sign language translation from video**. Network contains usage of CNN to learn spatial embedding from image frames and an attention-based encoder-decoder to map from tokenized (frame or gloss level) input to the target sentence.
