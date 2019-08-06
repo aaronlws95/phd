@@ -250,3 +250,17 @@ month={April},}
 }
 ```
 
+## [Zhou 2019](https://arxiv.org/pdf/1807.07860.pdf)
+
+**Generates talking face given an arbitrary face image and either input audio or video of speech**. The method involves learning a disentangled audio-visual representation between Person-ID space (pid) and Word-ID space (wid) in an adversarial manner. The audio-visual representation is learned such that audio and visual features are indistinguishable. Thus, a face generator can be learned by combining the disentangled pid feature and wid feature (either audio or video).
+
+```P
+@inproceedings{zhou2019talking,
+  title={Talking face generation by adversarially disentangled audio-visual representation},
+  author={Zhou, Hang and Liu, Yu and Liu, Ziwei and Luo, Ping and Wang, Xiaogang},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={33},
+  pages={9299--9306},
+  year={2019}
+}
+```
