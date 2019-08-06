@@ -79,3 +79,17 @@ Translate synthetic images to real using GAN for 3D hand pose estimation from RG
   year={2019}
 }
 ```
+
+## [Baek 2019](http://openaccess.thecvf.com/content_CVPR_2019/papers/Baek_Pushing_the_Envelope_for_RGB-Based_Dense_3D_Hand_Pose_Estimation_CVPR_2019_paper.pdf)
+
+**Estimate hand mesh from RGB image**. The estimation method consists of three modules. First is a 2D evidence estimator which estimates 2D joints as heatmaps and foreground mask features. The foreground features and 2D joint skeletons are then sent to the 3D mesh estimator which consists of a 2D pose refiner and 3D mesh estimator net. The 3D mesh estimator net takes in it's previous output, refined 2D joint, and foreground feature and outputs the MANO parameters (shape and pose) and camera parameters (3D rotation in quaternion space, scale and translation). The 2D pose refiner takes in the previous 2D joint, previous 3D mesh estimator output and foreground feature and outputs a refined 2D pose. The estimates are refined iteratively. The final 3D mesh estimation output is passed to the projector which maps the hand mesh to its 3D pose and renders a foreground hand mask from the hand mesh. During testing, iterative refinement is carried out by both comparing the intermediate 2D joint pose with the 2D joint pose extracted from the hand mesh and the foreground feature  with the foreground hand mask rendered from the hand mesh. The paper also introduces a self-supervised data augmentation method which uses MANO and generates hand foreground mask, 3D hand pose, and using a neural texture renderer to render RGB.
+
+```
+@inproceedings{baek2019pushing,
+  title={Pushing the Envelope for RGB-based Dense 3D Hand Pose Estimation via Neural Rendering},
+  author={Baek, Seungryul and Kim, Kwang In and Kim, Tae-Kyun},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={1067--1076},
+  year={2019}
+}
+```
