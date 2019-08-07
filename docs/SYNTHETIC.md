@@ -13,3 +13,17 @@
   year={2017}
 }
 ```
+
+## [Isola 2017](https://arxiv.org/pdf/1611.07004.pdf)
+
+**Image to image translation with conditional generative adversarial networks**. The method is based on conditional GANs. For the generator, a U-net architecture is chosen with skip connections to circumvent the information bottleneck. For the discriminator, L1 loss is employed as it accurately captures low frequencies. For high frequencies, the attention is restricted to structures in local image patches (PatchGAN). 
+
+```
+@inproceedings{zhu2017unpaired,
+  title={Unpaired image-to-image translation using cycle-consistent adversarial networks},
+  author={Zhu, Jun-Yan and Park, Taesung and Isola, Phillip and Efros, Alexei A},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={2223--2232},
+  year={2017}
+}
+```

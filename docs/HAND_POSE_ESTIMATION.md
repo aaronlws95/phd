@@ -93,3 +93,17 @@ Translate synthetic images to real using GAN for 3D hand pose estimation from RG
   year={2019}
 }
 ```
+
+## [Tekin 2019](https://arxiv.org/pdf/1904.05349)
+
+**Multitask learning for 3D hand pose, 3D object pose, and action recognition from egocentric RGB image**. From egocentric RGB images, first the 3D hand pose, 3D object pose, confidence values for hand and object root, and object and action class for the frame are predicted by a fully convolutional network. The training is carried out in a supervised manner with a 3D grid-based learning structure. The network predicts each component for each cell in the pre-defined grid and chooses the prediction from the cell with the highest confidence. To incorporate long term dependencies, an LSTM module is utilized. Hand and object interaction are first modelled at the structured output level by modelling the depencies between them with a fully connected layer. The resulting output is then passed to the LSTM.
+
+```
+@inproceedings{tekin2019h+,
+  title={H+ O: Unified egocentric recognition of 3D hand-object poses and interactions},
+  author={Tekin, Bugra and Bogo, Federica and Pollefeys, Marc},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={4511--4520},
+  year={2019}
+}
+```

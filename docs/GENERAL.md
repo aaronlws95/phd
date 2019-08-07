@@ -16,3 +16,18 @@
   publisher={Taipei, Taiwan}
 }
 ```
+
+## [Goodfellow 2014](http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf)
+
+**GAN original paper**.
+
+```
+@inproceedings{goodfellow2014generative,
+  title={Generative adversarial nets},
+  author={Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+  booktitle={Advances in neural information processing systems},
+  pages={2672--2680},
+  year={2014}
+}
+
+```
