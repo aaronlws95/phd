@@ -2,7 +2,7 @@
 
 ## [Wan 2019](http://www.vision.ee.ethz.ch/~wanc/papers/cvpr2019.pdf)
 
-Self-supervised 3D hand pose estimation from depth maps using a spherical hand model and multi-view supervision.
+**Self-supervised 3D hand pose estimation from depth maps using a spherical hand model and multi-view supervision**.
 ```
 @inproceedings{wan2019self,
   title={Self-supervised 3D hand pose estimation through training by fitting},
@@ -15,7 +15,7 @@ Self-supervised 3D hand pose estimation from depth maps using a spherical hand m
 
 ## [Rad 2018](https://arxiv.org/pdf/1712.03904.pdf)
 
-3D hand pose estimation from depth by feature mapping real image features to synthetic features and joint training on real and synthetic images.
+**3D hand pose estimation from depth by feature mapping real image features to synthetic features and joint training on real and synthetic images**.
 ```
 @inproceedings{rad2018feature,
   title={Feature mapping for learning fast and accurate 3d pose inference from synthetic images},
@@ -28,7 +28,7 @@ Self-supervised 3D hand pose estimation from depth maps using a spherical hand m
 
 ## [Boukhayma 2019](https://arxiv.org/pdf/1902.03451.pdf)
 
-Joint training on 3D and 2D hand annotations with reprojection to predict 3D hand shape (mesh) and pose from RGB.
+**Joint training on 3D and 2D hand annotations with reprojection to predict 3D hand shape (mesh) and pose from RGB**.
 ```
 @inproceedings{boukhayma20193d,
   title={3d hand shape and pose from images in the wild},
@@ -41,7 +41,7 @@ Joint training on 3D and 2D hand annotations with reprojection to predict 3D han
 
 ## [Cai 2018](http://openaccess.thecvf.com/content_ECCV_2018/papers/Yujun_Cai_Weakly-supervised_3D_Hand_ECCV_2018_paper.pdf)
 
-Weak supervision of 3D hand pose estimation from RGB by generating depth maps from predicted 3D poses.
+**Weak supervision of 3D hand pose estimation from RGB by generating depth maps from predicted 3D poses**.
 ```
 @inproceedings{cai2018weakly,
   title={Weakly-supervised 3d hand pose estimation from monocular rgb images},
@@ -54,7 +54,7 @@ Weak supervision of 3D hand pose estimation from RGB by generating depth maps fr
 
 ## [Mueller 2018](https://arxiv.org/pdf/1712.01057.pdf)
 
-Translate synthetic images to real using GAN for 3D hand pose estimation from RGB.
+**Translate synthetic images to real using GAN for 3D hand pose estimation from RGB**.
 
 ```
 @inproceedings{mueller2018ganerated,
