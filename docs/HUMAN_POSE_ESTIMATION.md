@@ -3,7 +3,7 @@
 
 ## [Wang 2019](https://arxiv.org/pdf/1901.03798.pdf)
 
-Bridges 2D to 3D domain gap with self-supervised correction mechanism that consists of 2D-to-3D pose transformation and 3D-to-2D pose projection.
+**Bridges 2D to 3D domain gap with self-supervised correction mechanism that consists of 2D-to-3D pose transformation and 3D-to-2D pose projection**.
 
 ```
 @article{wang20193d,
@@ -17,7 +17,7 @@ Bridges 2D to 3D domain gap with self-supervised correction mechanism that consi
 
 ## [Wandt 2019](https://arxiv.org/pdf/1902.09868.pdf)
 
-Tackles overfitting on 3D human pose estimation with an adversarial training method for with 2D projection and camera estimation
+**Tackles overfitting on 3D human pose estimation with an adversarial training method for with 2D projection and camera estimation**.
 
 ```
 @inproceedings{wandt2019repnet,
@@ -31,7 +31,7 @@ Tackles overfitting on 3D human pose estimation with an adversarial training met
 
 ## [Yang 2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Yang_3D_Human_Pose_CVPR_2018_paper.pdf)
 
- 3D human pose estimation in the wild with adversarial learning to adapt structures learned from fully annotated 3D pose in constrained environments to 2D pose annotations in-the-wild
+**3D human pose estimation in the wild with adversarial learning to adapt structures learned from fully annotated 3D pose in constrained environments to 2D pose annotations in-the-wild**.
 
 ```
 @inproceedings{yang20183d,
@@ -45,7 +45,7 @@ Tackles overfitting on 3D human pose estimation with an adversarial training met
 
 ## [Mehta  2017](https://arxiv.org/pdf/1611.09813.pdf)
 
-3D human body pose estimation from single RGB images by transfer learning from in-the-wild 2D pose annotations to constrained 3D pose annotations
+**3D human body pose estimation from single RGB images by transfer learning from in-the-wild 2D pose annotations to constrained 3D pose annotations**.
 
 ```
 @inproceedings{mehta2017monocular,
@@ -60,7 +60,7 @@ Tackles overfitting on 3D human pose estimation with an adversarial training met
 
 ## [Zhou 2017](http://openaccess.thecvf.com/content_ICCV_2017/papers/Zhou_Towards_3D_Human_ICCV_2017_paper.pdf)
 
-3D human pose estimation in-the-wild by jointly training on 2D and 3D datasets
+**3D human pose estimation in-the-wild by jointly training on 2D and 3D datasets**.
 
 ```
 @inproceedings{zhou2017towards,
@@ -74,7 +74,7 @@ Tackles overfitting on 3D human pose estimation with an adversarial training met
 
 ## [Rogez 2016](http://papers.nips.cc/paper/6563-mocap-guided-data-augmentation-for-3d-pose-estimation-in-the-wild.pdf)
 
-Synthesize images with 3D poses from 2D pose datasets by matching and stitching together 2D pose joints that match a 3D pose taken from a 3D pose dataset
+**Synthesize images with 3D poses from 2D pose datasets by matching and stitching together 2D pose joints that match a 3D pose taken from a 3D pose dataset**.
 
 ```
 @inproceedings{rogez2016mocap,
@@ -88,7 +88,7 @@ Synthesize images with 3D poses from 2D pose datasets by matching and stitching 
 
 ## [Jakab 2019](http://www.robots.ox.ac.uk/~vgg/research/unsupervised_pose/unsupervised_pose.pdf)
 
-Image translation to estimate 2D human pose from unlabelled video frames and unpaired human keypoints.
+**Image translation to estimate 2D human pose from unlabelled video frames and unpaired human keypoints**.
 
 ```
 @inproceedings{jakab2019image,
@@ -99,7 +99,7 @@ Image translation to estimate 2D human pose from unlabelled video frames and unp
 
 ## [Chen 2017](https://arxiv.org/pdf/1604.02703.pdf)
 
-Improve 3D human pose estimation by joint training on synthesized and real training data with domain adaptation to map the synthetic and real data to the same domain.
+**Improve 3D human pose estimation by joint training on synthesized and real training data with domain adaptation to map the synthetic and real data to the same domain**.
 
 ```
 @inproceedings{chen2016synthesizing,
@@ -114,7 +114,7 @@ Improve 3D human pose estimation by joint training on synthesized and real train
 
 ## [Wang 2019](https://arxiv.org/pdf/1903.07593.pdf)
 
-Learn visual correspondence from video in a self-supervised manner using cycle consistency in time. Applies to video object segmentation, keypoint tracking, and optical flow.
+**Learn visual correspondence from video in a self-supervised manner using cycle consistency in time. Applies to video object segmentation, keypoint tracking, and optical flow**.
 
 ```
 @inproceedings{wang2019learning,
