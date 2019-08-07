@@ -16,4 +16,3 @@
   publisher={Taipei, Taiwan}
 }
 ```
-
