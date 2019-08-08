@@ -107,3 +107,17 @@
   year={2019}
 }
 ```
+
+## [Yang 2019](https://arxiv.org/pdf/1812.01002.pdf)
+
+**Learns disentangled representations of hand poses and hand images with a disentangled variational autoencoder**. Various training methods for specific senarios are introduced. The theory is applied on image synthesis and hand pose estimation from RGB images. For image synthesis, the latent variable is disentangled with respect to 3D pose and image (background) content (specified by a representative tag image). By varying the two variables, the synthesized image can be manipulated. In the case where representative tag images are hard to obtain (if each RGB image in the trianing set contains different background content), a different approach is introduced where the image content is indirectly modelled through the RGB image. For hand pose estimation, the latent variable is disentangled with respect to a canonical pose and viewpoint. Both of which can be used to obtain the 3D pose. The proposed method allows leveraging unlabelled or weakly-labelled data. 
+
+```
+@inproceedings{yang2019disentangling,
+  title={Disentangling Latent Hands for Image Synthesis and Pose Estimation},
+  author={Yang, Linlin and Yao, Angela},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={9877--9886},
+  year={2019}
+}
+```
