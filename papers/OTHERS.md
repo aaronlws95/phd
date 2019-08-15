@@ -31,3 +31,17 @@
 }
 
 ```
+
+## [He 2018](https://arxiv.org/pdf/1703.06870.pdf)
+
+**Object instance segmentation**.
+
+```
+@inproceedings{he2017mask,
+  title={Mask r-cnn},
+  author={He, Kaiming and Gkioxari, Georgia and Doll{\'a}r, Piotr and Girshick, Ross},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={2961--2969},
+  year={2017}
+}
+```

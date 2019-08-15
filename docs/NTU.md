@@ -30,23 +30,3 @@ python main.py --cfg /mnt/lustre/awslow/mlcv-exp/data/cfg/yolo_hand_crop/fpha_yo
 ```
 srun -p NTU -w SG-IDC1-10-51-1-36  nvidia-smi
 ```
-
-### Syncing
-
-* Local -> SenseTime
-
-```
-scp -r /mnt/4TB/aaron/mlcv-exp/data st-ws:/mnt/lustre/awslow/mlcv-exp
-```
-
-or
-
-```
-rsync -v --stats --progress -a /mnt/4TB/aaron/mlcv-exp/data/ st-ws:/mnt/lustre/awslow/mlcv-exp/data/ -avz --exclude 'root.txt' --exclude 'exp/' --exclude 'saved/'
-```
-
-* SenseTime -> Local
-
-```
-rsync -v --stats --progress -a st-ws:/mnt/lustre/awslow/mlcv-exp/data/ /mnt/4TB/aaron/mlcv-exp/data/ -avz --exclude 'root.txt'
-```

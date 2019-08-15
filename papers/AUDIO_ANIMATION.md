@@ -264,3 +264,14 @@ month={April},}
   year={2019}
 }
 ```
+
+## [Yang 2019](https://arxiv.org/pdf/1908.01341.pdf)
+
+```
+@article{yang2019sf,
+  title={SF-Net: Structured Feature Network for Continuous Sign Language Recognition},
+  author={Yang, Zhaoyang and Shi, Zhenmei and Shen, Xiaoyong and Tai, Yu-Wing},
+  journal={arXiv preprint arXiv:1908.01341},
+  year={2019}
+}
+```

@@ -110,7 +110,7 @@
 
 ## [Yang 2019](https://arxiv.org/pdf/1812.01002.pdf)
 
-**Learns disentangled representations of hand poses and hand images with a disentangled variational autoencoder**. Various training methods for specific senarios are introduced. The theory is applied on image synthesis and hand pose estimation from RGB images. For image synthesis, the latent variable is disentangled with respect to 3D pose and image (background) content (specified by a representative tag image). By varying the two variables, the synthesized image can be manipulated. In the case where representative tag images are hard to obtain (if each RGB image in the trianing set contains different background content), a different approach is introduced where the image content is indirectly modelled through the RGB image. For hand pose estimation, the latent variable is disentangled with respect to a canonical pose and viewpoint. Both of which can be used to obtain the 3D pose. The proposed method allows leveraging unlabelled or weakly-labelled data. 
+**Learns disentangled representations of hand poses and hand images with a disentangled variational autoencoder**. Various training methods for specific senarios are introduced. The theory is applied on image synthesis and hand pose estimation from RGB images. For image synthesis, the latent variable is disentangled with respect to 3D pose and image (background) content (specified by a representative tag image). By varying the two variables, the synthesized image can be manipulated. In the case where representative tag images are hard to obtain (if each RGB image in the trianing set contains different background content), a different approach is introduced where the image content is indirectly modelled through the RGB image. For hand pose estimation, the latent variable is disentangled with respect to a canonical pose and viewpoint. Both of which can be used to obtain the 3D pose. The proposed method allows leveraging unlabelled or weakly-labelled data.
 
 ```
 @inproceedings{yang2019disentangling,
@@ -119,5 +119,33 @@
   booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
   pages={9877--9886},
   year={2019}
+}
+```
+
+## [Zimmermann 2017](https://arxiv.org/pdf/1705.01389.pdf)
+
+**3D RGB hand pose estimation**. 3 stages: Hand segmentation, 2D heatmap regression and finally estimating the 3D canonical pose and rotation matrix to transform the canonical pose to the final 3D hand pose.
+
+```
+@inproceedings{zimmermann2017learning,
+  title={Learning to estimate 3d hand pose from single rgb images},
+  author={Zimmermann, Christian and Brox, Thomas},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+  pages={4903--4911},
+  year={2017}
+}
+```
+
+## [Urooj 2018](https://arxiv.org/pdf/1803.03317.pdf)
+
+**Analysis of hand segmentation**. Evaluates off-the-shelf methods on hand segmentation. Collects new datasets for hand segmentation in the wild.
+
+```
+@inproceedings{urooj2018analysis,
+  title={Analysis of hand segmentation in the wild},
+  author={Urooj, Aisha and Borji, Ali},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={4710--4719},
+  year={2018}
 }
 ```

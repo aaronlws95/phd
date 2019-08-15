@@ -59,3 +59,29 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 ```
 for i in {0..100..10}; do echo $i; done
 ```
+
+## Syncing
+
+* e.g. Local -> SenseTime
+
+```
+scp -r /mnt/4TB/aaron/mlcv-exp/data st-ws:/mnt/lustre/awslow/mlcv-exp
+```
+
+or
+
+```
+rsync -v --stats --progress -a /mnt/4TB/aaron/mlcv-exp/data/ st-ws:/mnt/lustre/awslow/mlcv-exp/data/ -avz --exclude 'root.txt' --exclude 'exp/' --exclude 'saved/'
+```
+
+* e.g. SenseTime -> Local
+
+```
+rsync -v --stats --progress -a st-ws:/mnt/lustre/awslow/mlcv-exp/data/ /mnt/4TB/aaron/mlcv-exp/data/ -avz --exclude 'root.txt'
+```
+
+## Downloading from terminal
+
+```
+wget -O NAME.tar --no-check-certificate "https://link"
+```
