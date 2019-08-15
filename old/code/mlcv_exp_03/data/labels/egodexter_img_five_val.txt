@@ -1,0 +1,10 @@
+Desk/color/image_00000_color.png
+Desk/color/image_00200_color.png
+Desk/color/image_00300_color.png
+Desk/color/image_00400_color.png
+Desk/color/image_00500_color.png
+Fruits/color/image_00100_color.png
+Fruits/color/image_00400_color.png
+Kitchen/color/image_00200_color.png
+Kitchen/color/image_00300_color.png
+Rotunda/color/image_01500_color.png

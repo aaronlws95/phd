@@ -45,3 +45,11 @@ https://facundoq.github.io/unlp/sign_language_datasets/index.html
 | [GANerated](https://handtracker.mpi-inf.mpg.de/projects/GANeratedHands/GANeratedDataset.htm) | 330K | 3D | RGB | Synthetic | Single | Egocentric | [paper](https://handtracker.mpi-inf.mpg.de/projects/GANeratedHands/index.htm) |
 | [HO-3D](https://arxiv.org/pdf/1907.01481.pdf) | 15K | 3D | RGB | Real | Single | 3rd Person | [Global optimization with 3D models and RGB+D camera]((https://arxiv.org/pdf/1907.01481.pdf)) |
 | [Obman](https://www.di.ens.fr/willow/research/obman/data/) | 150K | 3D | RGB | Synthetic | Single | 3rd Person | [MANO, ShapeNet, GraspIt, SMPL](https://arxiv.org/pdf/1904.05767.pdf) |
+
+## Hand Segmentation
+
+| Dataset | Size | Modality | Environment | Hands per frame | Viewpoint | Method |
+|----------------------------------|--------|-----------|----------------|-----------------------------------|-----------------|------------|------------------------------------|
+| [EYTH](https://github.com/aurooj/Hand-Segmentation-in-the-Wild) | 2600 | RGB | In-the-wild (Youtube) | Single/Two | Egocentric/3rd person | [LabelMe](https://github.com/wkentaro/labelme) |
+| [Egohands](http://vision.soic.indiana.edu/projects/egohands/) | 4800 | RGB | In-the-wild | Single/Two | Egocentric/3rd person | Google Glass + Manual |
+| [EGTEA](http://www.cbi.gatech.edu/fpv/) | 13847 | RGB | Kitchen | Single/Two | Egocentric | SMI eye-tracking glasses + BasicFinder |

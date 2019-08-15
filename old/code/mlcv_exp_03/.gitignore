@@ -1,0 +1,15 @@
+*.pyc
+.ipynb_checkpoints
+*.h5
+*.hdf5
+*.weights
+*.save
+__pycache__/
+*.mp4
+*.gif
+data/exp/
+data/saved/
+data/weights/
+data/root.txt
+.pytest_cache/
+.vscode/
