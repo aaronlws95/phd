@@ -267,6 +267,8 @@ month={April},}
 
 ## [Yang 2019](https://arxiv.org/pdf/1908.01341.pdf)
 
+**Continuous sign language recognition from multiple levels of semantic information**. The paper introduces Structured Feature Network (SF-Net) which extracts features in a structure manner from sign lagnuage videos. Information is processed at 3 different levels. The first level is the frame level which incorporates 2D and 3D convolution to capture gesture, emotion and fast and small motions. The second level is the gloss level which generates meta frames which are processed by an LSTM to learn long term motions. Finally, the features are processed by a Bi-LSTM in the sentence level to encode context information. 
+
 ```
 @article{yang2019sf,
   title={SF-Net: Structured Feature Network for Continuous Sign Language Recognition},
