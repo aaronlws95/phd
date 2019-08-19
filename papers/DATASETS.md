@@ -49,7 +49,7 @@ https://facundoq.github.io/unlp/sign_language_datasets/index.html
 ## Hand Segmentation
 
 | Dataset | Size | Modality | Environment | Hands per frame | Viewpoint | Method |
-|----------------------------------|--------|-----------|----------------|-----------------------------------|-----------------|------------|------------------------------------|
+|----------------------------------|--------|-----------|----------------|-----------------------------------|-----------------|------------|
 | [EYTH](https://github.com/aurooj/Hand-Segmentation-in-the-Wild) | 2600 | RGB | In-the-wild (Youtube) | Single/Two | Egocentric/3rd person | [LabelMe](https://github.com/wkentaro/labelme) |
 | [Egohands](http://vision.soic.indiana.edu/projects/egohands/) | 4800 | RGB | In-the-wild | Single/Two | Egocentric/3rd person | Google Glass + Manual |
 | [EGTEA](http://www.cbi.gatech.edu/fpv/) | 13847 | RGB | Kitchen | Single/Two | Egocentric | SMI eye-tracking glasses + BasicFinder |
