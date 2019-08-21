@@ -27,3 +27,4 @@ class DCGAN_Discriminator(nn.Module):
         out = out.view(out.shape[0], -1)
         validity = self.adv_layer(out)
         return validity
+    

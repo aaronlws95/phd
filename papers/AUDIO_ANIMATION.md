@@ -267,7 +267,7 @@ month={April},}
 
 ## [Yang 2019](https://arxiv.org/pdf/1908.01341.pdf)
 
-**Continuous sign language recognition from multiple levels of semantic information**. The paper introduces Structured Feature Network (SF-Net) which extracts features in a structure manner from sign lagnuage videos. Information is processed at 3 different levels. The first level is the frame level which incorporates 2D and 3D convolution to capture gesture, emotion and fast and small motions. The second level is the gloss level which generates meta frames which are processed by an LSTM to learn long term motions. Finally, the features are processed by a Bi-LSTM in the sentence level to encode context information. 
+**Continuous sign language recognition from multiple levels of semantic information**. The paper introduces Structured Feature Network (SF-Net) which extracts features in a structure manner from sign lagnuage videos. Information is processed at 3 different levels. The first level is the frame level which incorporates 2D and 3D convolution to capture gesture, emotion and fast and small motions. The second level is the gloss level which generates meta frames which are processed by an LSTM to learn long term motions. Finally, the features are processed by a Bi-LSTM in the sentence level to encode context information.
 
 ```
 @article{yang2019sf,
@@ -275,5 +275,29 @@ month={April},}
   author={Yang, Zhaoyang and Shi, Zhenmei and Shen, Xiaoyong and Tai, Yu-Wing},
   journal={arXiv preprint arXiv:1908.01341},
   year={2019}
+}
+```
+
+## [Yang 2019](https://arxiv.org/pdf/1908.01341.pdf)
+
+**Continuous sign language recognition from multiple levels of semantic information**. The paper introduces Structured Feature Network (SF-Net) which extracts features in a structure manner from sign lagnuage videos. Information is processed at 3 different levels. The first level is the frame level which incorporates 2D and 3D convolution to capture gesture, emotion and fast and small motions. The second level is the gloss level which generates meta frames which are processed by an LSTM to learn long term motions. Finally, the features are processed by a Bi-LSTM in the sentence level to encode context information.
+
+```
+@article{yang2019sf,
+  title={SF-Net: Structured Feature Network for Continuous Sign Language Recognition},
+  author={Yang, Zhaoyang and Shi, Zhenmei and Shen, Xiaoyong and Tai, Yu-Wing},
+  journal={arXiv preprint arXiv:1908.01341},
+  year={2019}
+}
+```
+
+## [Stoll 2018](http://bmvc2018.org/contents/papers/0906.pdf)
+
+**Generates sign language frames from spoken language sentences**. The method involves 3 stages: neural machine translation from spoken language to sign gloss, mapping sign gloss to corresponding skeleton pose with a lookup table, and finally generating the sign language frames given a base input image and the skeleton pose sequence. The skeleton pose consists of 10 keypoints corresponding to the upper body which do not include detailed hand keypoints.
+
+```
+@inproceedings{stoll2018sign,
+  title={Sign Language Production using Neural Machine Translation and Generative Adversarial Networks.},
+  author={Stoll, Stephanie and Hadfield, Simon and Bowden, Richard}
 }
 ```
